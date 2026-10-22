@@ -1,0 +1,23 @@
+PREÇOCERTO — VERSÃO PLANA PARA GITHUB PAGES
+
+Este ZIP contém os arquivos de publicação todos na RAIZ, sem pastas e subpastas.
+Os nomes src__...js são intencionais: substituem a estrutura original src/ui/... e
+as importações já foram ajustadas para apontar para os nomes planos.
+
+COMO ENVIAR PELO CELULAR
+1. Extraia o ZIP no celular.
+2. Abra https://github.com/william123k2/precocerto
+3. Use Add file > Upload files.
+4. Selecione TODOS os arquivos extraídos (não envie o próprio ZIP).
+5. Confirme o commit na branch main.
+6. Em Settings > Pages, selecione Deploy from a branch, branch main e pasta /(root).
+7. Aguarde a publicação e abra https://william123k2.github.io/precocerto/
+
+IMPORTANTE
+- Envie index.html, app.css, manifest.webmanifest, sw.js, precache.json, todos os
+  arquivos src__*.js, ícones PNG/SVG e todos os arquivos Tesseract/OCR.
+- Não renomeie os arquivos.
+- Não selecione a pasta original dentro do ZIP: esta versão não tem subpastas.
+- Correção OCR: corePath e langPath apontam diretamente para a raiz, onde estão os arquivos WASM e por.traineddata.gz. O reconhecimento OCR requer todos os arquivos Tesseract; sem eles o scanner pode falhar. A versão do cache foi atualizada para forçar a renovação do service worker.
+- Depois de atualizar, recarregue a página. Se ainda aparecer a versão antiga, limpe
+  os dados/cache do site ou abra em uma aba anônima para testar.
